@@ -65,3 +65,13 @@ FQA
 下载地址https://github.com/oneclick/rubyinstaller/downloads/
 ruby dk.rb init
 ruby dk.rb install
+
+
+Rake aborted ! Issue installing Octopress
+
+First update the documentation to say,
+
+bundle exec rake install
+Then update the Gemfile.lock with,
+
+bundle update
