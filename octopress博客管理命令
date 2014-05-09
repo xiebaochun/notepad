@@ -1,0 +1,7 @@
+
+$ rake new_post["New Post"]                      创建文章
+$ rake generate                                  生成html文件
+$ git add .                                      将生成的相关文件添加至git中
+$ git commit -am "Some comment here."            添加一个推送分支
+$ git push origin source                         推送源文件至远程仓库的source分支
+$ rake deploy                                    部署文章（博客）
