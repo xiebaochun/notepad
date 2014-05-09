@@ -5,3 +5,54 @@ $ git add .                                      将生成的相关文件添加�
 $ git commit -am "Some comment here."            添加一个推送分支
 $ git push origin source                         推送源文件至远程仓库的source分支
 $ rake deploy                                    部署文章（博客）
+
+
+1.安装 RVM
+
+RVM(Ruby Version Manager)
+
+$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+2.安装Ruby1.9.2
+
+rvm install 1.9.2 && rvm use 1.9.2
+安装Octopress
+
+1.安装Octopress
+
+git clone git://github.com/imathis/octopress.git myblog
+cd myblog    //这边会有提示信息，yes就行
+ruby --version  //Ruby的版本需要在1.9.2版本
+2.安装插件等等
+
+gem install bundler //安装相关附属插件等
+bundle install
+3.安装Octopress 主题
+
+rake install
+4. 修改配置
+
+修改配置文件_config.yml，修改url、title、subtitle、author等等，把评论disqus加上，google+、twitter、Facebook等等，统统都加上。 在source下建CNAME文件，
+
+5. 创建github pero
+
+在github上创建一个repository
+
+6. 本地配置github分支
+
+rake setup_github_pages
+当命令提示你输入github URL时，输入刚才建立的git地址
+
+7. 写文章
+
+rake new_post["my first blog"] 
+在”myblog/source/_post”下生成一个**.makedown文件，编辑文章即可。
+
+8. 生成，预览
+
+rake generate
+rake preview
+在本地 http://127.0.0.1:4000 就可在本地调试页面
+
+9. git提交
+
+rake deploy
