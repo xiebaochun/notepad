@@ -6,7 +6,6 @@ $ git commit -am "Some comment here."            添加一个推送分支
 $ git push origin source                         推送源文件至远程仓库的source分支
 $ rake deploy                                    部署文章（博客）
 
-
 1.安装 RVM
 
 RVM(Ruby Version Manager)
