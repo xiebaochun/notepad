@@ -56,3 +56,13 @@ rake preview
 9. git提交
 
 rake deploy
+
+
+FQA
+
+报native gem requires installed build tools错误
+根本原因就是缺少DevKit库，解决方案如下，参照的Complete setup guide for Ruby, Cucumber and Watir or Selenium webdriver on Windows:
+首先需要下载Win下面的DevKit安装文件DevKit-tdm-32-…….exe，解压后通过命令行进入解压文件，依次运行下列命令行：
+下载地址https://github.com/oneclick/rubyinstaller/downloads/
+ruby dk.rb init
+ruby dk.rb install
