@@ -1,0 +1,20 @@
+ cocos2dx3.0rc如何创建新工程
+ 
+1.在cocos2d-x-3.0rc0\运行python命令
+python setup.py
+//它的作用是将下面这些路径加入到你的用户环境变量中，当然你也可以不添加
+COCOS_CONSOLE_ROOT = 'COCOS_CONSOLE_ROOT'
+NDK_ROOT = 'NDK_ROOT'
+ANDROID_SDK_ROOT = 'ANDROID_SDK_ROOT'
+ANT_ROOT = 'ANT_ROOT'
+
+//如果你已经将COCOS_CONSOLE_ROOT = "COCOS_CONSOLE_ROOT'加入到了你的环境变量中，也就是说你运行了setup.py
+2.那么直接运行下面命令
+cocos new MyGame -p com.MyCompany.MyGame -l cpp -d e:/MyCompany
+
+MyGame: name of your project
+-p com.MyCompany.MyGame: package name for android
+-l cpp: programming language used for the project, valid value is cppand lua
+-d e:/MyCompany: directory to hold your project 
+cocos在cocos2d-x-3.0rc0\tools\cocos2d-console\bin下
+好了，恭喜你新的项目创建成功了！你会发现这个项目很大有810M,因为它把引擎也拷贝过来了，我想它这样做的好处是简化项目配置环境，也就是说不管谁拿到这个项目都可以跑起来，不需要重新去改项目的配置了。
