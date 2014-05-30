@@ -1,0 +1,14 @@
+绘制字符串：
+
+声明中
+{
+SpriteFont Font1;
+}
+loadContent()
+{
+Font1 = Content.Load<SpriteFont>("SpriteFont1");
+}
+draw()
+{
+spriteBatch.DrawString(Font1, "" + CommonItem.submissiveCount, new Vector2(824 * CommonItem.rate.X, 295 * CommonItem.rate.Y), Microsoft.Xna.Framework.Color.LightGreen, 0, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0.5f);
+}
