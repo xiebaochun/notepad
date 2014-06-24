@@ -75,3 +75,7 @@ bundle exec rake install
 Then update the Gemfile.lock with,
 
 bundle update
+
+相关网站：
+http://opentechschool.github.io/social-coding/extras/pages.html
+https://pages.github.com/
