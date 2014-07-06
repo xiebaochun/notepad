@@ -1,0 +1,1 @@
+alter table questionlib modify id int(11) auto_increment;  id自增
