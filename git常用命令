@@ -74,8 +74,10 @@ bin
     url = git@gitcafe.com:dragon/test.git
 这样，使用git push all即可一键Push到多个远程仓库中。
 
-
-
+8）删除远程仓库的某文件
+git rm /path to file name /
+//git commit -m "delete xx file"
+//git push origin master
 
 FQA
 
