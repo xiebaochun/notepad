@@ -47,6 +47,18 @@ svn://120.131.81.217/qipao_tools/trunk
 云主机2配置(数据库)：
 			ip:120.131.81.42  2cpu_4gram 100g硬盘 win2008x64
 			账号：administrator/Gq502@x!91
+云主机4配置：
+	名称： gaoqian_91qipao_db
+	ip:120.131.84.112/10.10.0.7     8cpu_16gram 5M 400g硬盘   centos6.5x64
+	账号：root / syscloud.cn$#@!1234
+	mysql:	root /  Gq@qi502c	(port:3386)
+
+云主机5配置：
+	名称： gaoqian_91qipao_www
+	ip:120.131.84.113/10.10.0.8     8cpu_16gram 5M 400g硬盘   centos6.5x64
+	账号：root / Gq@paoc502
+
+
 数据库：mysql: 端口：3307 root / Gq3502@c91 
 
 http://tongji.baidu.com/web/welcome/login
